@@ -1,0 +1,11 @@
+Spring's web framework is based on the Model-View-Controller(MVC) architectural pattern. This architecture decouples business functionality from the presentation logic.
+
+	* The model represents the application data
+	* The view presents the data from the model
+	* The controller receives user input and populates the model
+
+Spring MVC Implementation:
+
+	1. Controller is a Java class which receives web requests from the user, performs some business logic (usually on the service layer), and returns domain objects into the model.
+	2. Model consists of JavaBean components which are produced by the controller, ready for the view.
+	3. Views are usually developed using JavaServer Pages(JSP) with the Java Standard Tag Library(JSTL). The Java objects in the model can be accessed using the JSP expression language.
