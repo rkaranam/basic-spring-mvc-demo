@@ -9,3 +9,29 @@ Spring MVC Implementation:
 	1. Controller is a Java class which receives web requests from the user, performs some business logic (usually on the service layer), and returns domain objects into the model.
 	2. Model consists of JavaBean components which are produced by the controller, ready for the view.
 	3. Views are usually developed using JavaServer Pages(JSP) with the Java Standard Tag Library(JSTL). The Java objects in the model can be accessed using the JSP expression language.
+
+Components in detail:
+
+	Controller
+
+		A controller receives web requests from the user, performs some business logic, and populates the model with JavaBean components for the view to present.
+
+	@Controller
+
+		1. The @Controller annotation designates an arbitrary(POJO) class as a web controller.
+		2. Spring can automatically detect controller classes using class path scanning, and make them available to receive requests from end users.
+		3. @Controller is a specialization of @Component. The other types of @Component are @Service and @Repository.
+
+	@RequestMapping
+
+		1. The @RequestMapping annotation maps web requests to Java classes and methods.
+		2. Spring implements the front controller pattern to dispatch web requests to the appropriate handler.
+
+	@ModelAttribute
+
+		1. The @ModelAttribute annotation binds the return value of a method to a named attribute in the model.
+
+	@RequestParam
+
+		1. The @RequestParam annotation binds HTTP request parameters to method arguments in the controller.
+

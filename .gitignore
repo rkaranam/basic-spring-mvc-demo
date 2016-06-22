@@ -17,6 +17,9 @@ local.properties
 # Eclipse Core
 .project
 
+# Generated OSGI Bundle manifest
+MANIFEST.MF
+
 # External tool builders
 .externalToolBuilders/
 
