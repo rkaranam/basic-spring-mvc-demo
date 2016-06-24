@@ -35,3 +35,16 @@ Components in detail:
 
 		1. The @RequestParam annotation binds HTTP request parameters to method arguments in the controller.
 
+TODOs:
+======
+Views - Notes
+Internationalization - Implementation & Notes
+Configuration - Notes & Implementation?
+
+Form Processing with Spring MVC
+
+	1. Spring helps us to prepare and display data for the form, as well as arbitrary reference data, such as drop down list of permitted values, for example
+	2. A data binding mechanism automatically populates Java objects from the submitted form data, and there is also support for validation and error output
+	
+
+
